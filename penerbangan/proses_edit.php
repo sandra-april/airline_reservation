@@ -11,15 +11,11 @@ if(isset($_POST['simpan'])){
     $kotatujuan = $_POST['kota_tujuan'];
     $jamkeberangkatan = $_POST['jam_keberangkatan'];
 
-
-   
 $sql = "UPDATE penerbangan SET
      kota_asal ='$kotaasal', 
     kota_tujuan ='$kotatujuan',
     jam_keberangkatan ='$jamkeberangkatan'
-   
     WHERE penerbangan_id = $id";
-
 
 $query = mysqli_query($db,$sql);
 
@@ -28,7 +24,6 @@ if ($query){
    } else {
     $_SESSION['notifikasi']= "Data gagal diperbarui!";
    }
-
    header('Location: index.php');
    } else {
 

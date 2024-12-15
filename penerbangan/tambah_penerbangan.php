@@ -17,7 +17,7 @@
             <td>kota tujuan</td>
             <td><input type ="text" name="kota_tujuan" required></td>
         </tr>
-        <tr>
+        <tr
                 <td>jam keberangkatan</td>
                 <td>
                     <input type='time' name='jam_keberangkatan' required>
